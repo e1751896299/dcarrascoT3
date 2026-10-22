@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dcarrascoT3.Views.vLogin"
+             Title="vLogin">
+
+    <ContentPage.Resources>
+        <Style x:Key="styLabel" TargetType="Label">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="TextColor" Value="blue"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="styleEntry" TargetType="Entry">
+            <Setter Property="Background" Value="Beige"/>
+            <Setter Property="TextColor" Value="Blue"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+        
+    </ContentPage.Resources>
+
+    <VerticalStackLayout
+        Padding="20"
+        Spacing="15">
+        
+        <Label 
+            Text="INICIO DE SESIÓN"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Image Source="login.jpeg"
+               WidthRequest="130"/>
+
+        <Grid HorizontalOptions="Center"
+              VerticalOptions="Center"
+              RowSpacing="10"
+              ColumnSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+            <Label Text="Usuario: "
+                   Style="{StaticResource styLabel}"/>
+
+            <Entry x:Name ="txtUsuario"
+                   Style="{StaticResource styleEntry}"/>
+            <Label Text="Contraseña: "
+                   Style="{StaticResource styLabel}"/>
+
+            <Entry x:Name="txtContraseña"
+                    Style="{StaticResource styleEntry}"/>
+
+        </Grid>
+
+        <Button x:Name="btnIniciarSesion"
+                Style="{StaticResource BotonGlobal}"/>
+
+
+        <Button x:Name="btnRegistrarUsuario"
+                Style="{StaticResource BotonGlobal}"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>
