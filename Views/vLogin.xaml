@@ -48,25 +48,38 @@
 
 
             <Label Text="Usuario: "
-                   Style="{StaticResource styLabel}"/>
+                   Style="{StaticResource styLabel}"
+                   Grid.Column="0"
+                   Grid.Row="0"/>
 
             <Entry x:Name ="txtUsuario"
-                   Style="{StaticResource styleEntry}"/>
+                   Style="{StaticResource styleEntry}"
+                   Grid.Column="1"
+                   Grid.Row="0"/>
+            
             <Label Text="Contraseña: "
-                   Style="{StaticResource styLabel}"/>
+                   Style="{StaticResource styLabel}"
+                   Grid.Column="0"
+                   Grid.Row="1"/>
 
             <Entry x:Name="txtContraseña"
-                    Style="{StaticResource styleEntry}"/>
+                    Style="{StaticResource styleEntry}"
+                   IsPassword="True"
+                   Grid.Column="1"
+                   Grid.Row="1"/>
 
         </Grid>
 
         <Button x:Name="btnIniciarSesion"
-                Style="{StaticResource BotonGlobal}"/>
+                Style="{StaticResource BotonGlobal}"
+                Clicked="btnIniciarSesion_Clicked"/>
+                
 
 
         <Button x:Name="btnRegistrarUsuario"
-                Style="{StaticResource BotonGlobal}"/>
-
+                Style="{StaticResource BotonGlobal}"
+                Clicked="btnRegistrarUsuario_Clicked"/>
+                
 
     </VerticalStackLayout>
 </ContentPage>
