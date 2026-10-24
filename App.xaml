@@ -4,16 +4,17 @@
              xmlns:local="clr-namespace:dcarrascoT3"
              x:Class="dcarrascoT3.App">
     <Application.Resources>
-        <Style x:Key="BotonGlobal" TargetType="Button">
-            <Setter Property="BackgroundColor" Value="Bisque"/>
-            <Setter Property="TextColor" Value="Blue"/>
-        </Style>
-        <!--<ResourceDictionary>
-            
-            --><!--<ResourceDictionary.MergedDictionaries>
+        
+        <ResourceDictionary>
+            <Style x:Key="BotonGlobal" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Bisque"/>
+                <Setter Property="TextColor" Value="Blue"/>
+            </Style>
+
+            <!--<ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
-            </ResourceDictionary.MergedDictionaries>--><!--
-        </ResourceDictionary>-->
+            </ResourceDictionary.MergedDictionaries>-->
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

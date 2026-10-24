@@ -71,15 +71,15 @@
         </Grid>
 
         <Button x:Name="btnIniciarSesion"
-                Style="{StaticResource BotonGlobal}"
-                Clicked="btnIniciarSesion_Clicked"/>
-                
-
+        Text="Iniciar sesión"
+        Style="{StaticResource BotonGlobal}"
+        Clicked="btnIniciarSesion_Clicked"/>
 
         <Button x:Name="btnRegistrarUsuario"
-                Style="{StaticResource BotonGlobal}"
-                Clicked="btnRegistrarUsuario_Clicked"/>
-                
+        Text="Registrar usuario"
+        Style="{StaticResource BotonGlobal}"
+        Clicked="btnRegistrarUsuario_Clicked"/>
+
 
     </VerticalStackLayout>
 </ContentPage>
